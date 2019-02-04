@@ -82,6 +82,8 @@ use labor_sql;
 -- SELECT * FROM passenger --  WHERE name RLIKE '(?i)\\w+\\s+C\\w';
 -- 13
 -- SELECT * FROM passenger --  WHERE name RLIKE '(?i)\\w+\\s+^J\\w';
+
+
 -- 3.
 -- 1
 -- SELECT maker, type, speed, hd FROM pc   JOIN product AS pr ON pc.model=pr.model  WHERE hd <=8;
@@ -95,6 +97,7 @@ use labor_sql;
 -- SELECT * FROM(SELECT c1.country from classes as c1 GROUP BY c1.country,c1.type) AS c2 group by c2.country having count(c2.country)=2;
  -- 6
  -- SELECT p.model, p.maker, pc.price from product  AS p JOIN pc ON p.model=pc.model WHERE pc.price<600;
+
  -- 7 
  -- SELECT pi.model, po.maker FROM printer pi JOIN product po ON  pi.model=po.model WHERE price >300
  -- 8
